@@ -1,0 +1,85 @@
+[
+    {
+        name: "AxeFe",
+        date: "-42 avant JC",
+        lieu: "Bretagne",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante lacus, maximus eu quam ac, euismod fringilla risus. Sed magna nulla, posuere nec dui sit amet, volutpat molestie eros. Nam convallis dictum sollicitudin. Morbi non tortor urna. Nullam eget metus quis nunc posuere scelerisque in vel lectus.",
+        total: 145,
+        scene: {
+            meshes: {
+                "Axis" : { url: "obj/axe.nxs" }
+            },
+            modelInstances : {
+                "Model1" : { mesh : "Axis" }
+            },
+            trackball: {
+                type : "TurntablePanTrackball"
+            }
+        }
+    },
+    {
+        name: "Boulet granite",
+        date: "-42 avant JC",
+        lieu: "Au bout du monde",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante lacus, maximus eu quam ac, euismod fringilla risus. Sed magna nulla, posuere nec dui sit amet, volutpat molestie eros. Nam convallis dictum sollicitudin. Morbi non tortor urna. Nullam eget metus quis nunc posuere scelerisque in vel lectus.",
+        total: 250,
+        scene: {
+            meshes: {
+                "Axis" : { url: "obj/boulet.nxs" }
+            },
+            modelInstances : {
+                "Model1" : { mesh : "Axis" }
+            },
+            trackball: {
+                type : "TurntablePanTrackball"
+            }
+        }
+    },
+    {
+        name: "Bracelets",
+        date: "-42 avant JC",
+        lieu: "Quelque part",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante lacus, maximus eu quam ac, euismod fringilla risus. Sed magna nulla, posuere nec dui sit amet, volutpat molestie eros. Nam convallis dictum sollicitudin. Morbi non tortor urna. Nullam eget metus quis nunc posuere scelerisque in vel lectus.",
+        total: 705,
+        scene: {
+            meshes: {
+                "Axis" : { url: "obj/bracelets.nxs" }
+            },
+            modelInstances : {
+                "Model1" : { mesh : "Axis" }
+            },
+            trackball: {
+                type : "TurntablePanTrackball"
+            }
+        },
+        scene_c: {
+            meshes: {
+                "Axis" : { url: "obj/bracelets_c.ply" }
+            },
+            modelInstances : {
+                "Model1" : { mesh : "Axis" }
+            },
+            trackball: {
+                type : "TurntablePanTrackball"
+            }
+        }
+    },
+    {
+        name: "Secret",
+        date: "-42 avant JC ?",
+        lieu: "France",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante lacus, maximus eu quam ac, euismod fringilla risus. Sed magna nulla, posuere nec dui sit amet, volutpat molestie eros. Nam convallis dictum sollicitudin. Morbi non tortor urna. Nullam eget metus quis nunc posuere scelerisque in vel lectus.",
+        total: 507,
+        scene: {
+            meshes: {
+                "Axis" : { url: "obj/mini.nxs" }
+            },
+            modelInstances : {
+                "Model1" : { mesh : "Axis" }
+            },
+            trackball: {
+                type : "TurntablePanTrackball"
+            }
+        }
+    }
+]

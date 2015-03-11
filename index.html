@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>3DHOP</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 3DHOP -->
+    <link type="text/css" rel="stylesheet" href="css/3dhop.css"/>
+    <script type="text/javascript" src="js/spidergl.js"></script>
+    <script type="text/javascript" src="js/presenter.js"></script>
+    <script type="text/javascript" src="js/nexus.js"></script>
+    <script type="text/javascript" src="js/ply.js"></script>
+    <script type="text/javascript" src="js/trackball_sphere.js"></script>
+    <script type="text/javascript" src="js/trackball_turntable.js"></script>
+    <script type="text/javascript" src="js/trackball_pantilt.js"></script>
+    <script type="text/javascript" src="js/trackball_turntable_pan.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2 well list">
+            <h3>Objets:</h3>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            </div>
+        </div>
+        <div class="col-md-6 well canvas3d">
+            <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
+                <div id="tdhlg"></div>
+                <div id="toolbar">
+                    <img id="home" title="Home" src="skins/dark/home.png"/><br/>
+                    <img id="zoomin" title="Zoom In" src="skins/dark/zoomin.png"/><br/>
+                    <img id="zoomout" title="Zoom Out" src="skins/dark/zoomout.png"/><br/>
+                    <img id="light_on" title="Disable Light Control" src="skins/dark/light_on.png"
+                         style="position:absolute; visibility:hidden;"/>
+                    <img id="light" title="Enable Light Control" src="skins/dark/light.png"/><br/>
+                    <img id="full_on" title="Exit Full Screen" src="skins/dark/full_on.png"
+                         style="position:absolute; visibility:hidden;"/>
+                    <img id="full" title="Full Screen" src="skins/dark/full.png"/>
+                </div>
+                <canvas id="draw-canvas" style=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hide" id="accordion-item">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#{{id}}" aria-expanded="true"
+                   aria-controls="collapseOne">
+                    {{title}}
+                </a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse" role="tabpanel" id="{{id}}"
+             aria-labelledby="headingOne">
+            <div class="panel-body">
+                <b>Date:</b> {{date}}<br/>
+                <b>Lieu:</b> {{lieu}}<br/>
+                <b>Description:</b> {{desc}}<br/><br/>
+                <div class="progress" id="progress{{idArray}}">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        0%
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button data-id="{{idArray}}" class="btn btn-sm btn-primary showObj">Afficher</button>
+                    <button data-id="{{idArray}}" class="btn btn-sm btn-primary showObjC hide">Afficher en couleur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
